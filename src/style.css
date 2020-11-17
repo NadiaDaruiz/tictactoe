@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+  height: 100vh;
+  background: url('./img/colorful-background.png') no-repeat center center fixed ;
+  background-size: cover;
+}
+.game-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  padding: 0 10px 5px;
+  font-family: 'Ribeye Marrow', cursive;
+  font-size: 2.25em;
+  color: #f7bd61;
+}
+.game-status {
+  width: 55%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  align-self: flex-start;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  color: purple;
+}
+.game-subcontainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.each-move {
+  align-self: flex-start;
+}
+.square {
+  font-family: 'Fredoka One', cursive;
+  color:#85ad82;
+  border: 3px solid #85ad82;
+  background-color: transparent;
+  float: left;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 50px;
+  height: 150px;
+  width: 150px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+}
+.square:focus {
+  outline: none;
+}
+.moves-list {
+  list-style: none;
+  padding-bottom: 3px ;
+}
+.btn-moves {
+  height: 2em;
+  width: 10em;
+  border: none;
+  border-radius: 3em;
+  background-color: #6d3e7c;
+  color: whitesmoke; 
+}
+.game-box {
+  padding-bottom: 10px;
+}
+.outer-border {
+  border: 7px solid #85ad82;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 5px; 
+}
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
